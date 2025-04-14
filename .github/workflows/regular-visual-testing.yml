@@ -14,7 +14,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run visual testing
-        run: npm run cy:percy
+        run: npx percy exec -- npx cypress run
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
       - name: Run Component visual Testing
