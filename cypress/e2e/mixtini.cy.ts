@@ -15,9 +15,11 @@ describe("Index Page", () => {
     cy.wait(1000);
 
     // 輸入「愛爾蘭咖啡」
-    cy.get('input[placeholder="請輸入調酒名稱或材料"]').type("愛爾蘭咖啡", {
-      delay: 100,
-    });
+    cy.get('input[placeholder="請輸入調酒名稱或材料"]')
+      .should("not.be.disabled")
+      .type("愛爾蘭咖啡", {
+        delay: 100,
+      });
 
     // 點擊搜尋按鈕
     cy.get('button[data-testid="SEARCH_BUTTON"]').click();
