@@ -233,9 +233,10 @@ export const Button = ({ label, onClick }: ButtonProps) => {
 };
 ```
 
-- 需要安裝 `@storybook/test`
+- 需要安裝 `@storybook/test`, `@percy/storybook`
 
 ```bash
+pnpm add -D @percy/storybook
 pnpm add -D @storybook/test
 ```
 
