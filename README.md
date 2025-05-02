@@ -298,7 +298,7 @@ export const Default: Story = {
 
 ```json
 {
- "version": 2
+ "version": 2,
  "snapshot": {
    "widths": [375, 768, 1280],
    "min-height": 1024
